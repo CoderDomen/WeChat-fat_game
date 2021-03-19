@@ -1,0 +1,120 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": false,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"compileHotReLoad": false,
+		"useMultiFrameRuntime": false,
+		"useApiHook": true,
+		"enableEngineNative": false,
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"packNpmManually": false,
+		"packNpmRelationList": [],
+		"minifyWXSS": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.14.4",
+	"appid": "wx7c5d028cd53ee47d",
+	"projectname": "bipan",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"list": []
+		},
+		"conversation": {
+			"list": []
+		},
+		"plugin": {
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"list": []
+		},
+		"miniprogram": {
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/personInfo/personInfo",
+					"pathName": "pages/personInfo/personInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/myfat/myfat",
+					"pathName": "pages/myfat/myfat",
+					"query": "",
+					"scene": 1001
+				},
+				{
+					"id": 2,
+					"name": "pages/othfat/othfat",
+					"pathName": "pages/othfat/othfat",
+					"query": "roomId=77",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/othinvite/othinvite",
+					"pathName": "pages/othinvite/othinvite",
+					"query": "roomId=90",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/myinvite/myinvite",
+					"pathName": "pages/myinvite/myinvite",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "roomId=16&jump=true",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "pages/guanzhu/guanzhu",
+					"pathName": "pages/guanzhu/guanzhu",
+					"query": "",
+					"scene": 1001
+				}
+			]
+		}
+	}
+}

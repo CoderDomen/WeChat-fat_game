@@ -1,0 +1,23 @@
+<view class="wrapper">
+	<view class="content_wrapper">
+		<image class="wg" src="../../assets/images/wg.png"></image>
+
+		<view class="title">
+			<slot></slot>
+		</view>
+		<view class="content">
+			<slot name="content1"></slot>
+		</view>
+		<view class="content">
+			<slot name="content2"></slot>
+		</view>
+		<!-- <slot name="content2" class="content"></slot> -->
+		<view class="content_last">本活动最终解释权归 <text class="content_last_text">女生主张</text> 所有</view>
+
+		<view class="btntrue">
+			<image class="btntrue_image" mode="widthFix" bindtap="btnCofirm" src="../../assets/images/btntrue.png"></image>
+		</view>
+
+		<image mode="widthFix" class="girlright" src="../../assets/images/girlright.png"></image>
+	</view>
+</view>

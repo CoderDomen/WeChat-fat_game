@@ -1,0 +1,14 @@
+/* .gift_wrapper {
+  width: 88rpx;
+} */
+
+.gift_butt {
+  padding: 0;
+  background: none;
+  display: inline;
+  /* width: 0; */
+}
+
+.gift_image {
+  width: 110rpx;
+}

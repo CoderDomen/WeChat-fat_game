@@ -1,0 +1,141 @@
+<view class="wrapper">
+
+
+
+
+	<view class="content_wrapper">
+
+		<image mode="widthFix" bindtap="closegift" class="close" src="../../assets/images/close.png"></image>
+		<!-- tab -->
+		<view class="tab">
+			<view class="tab_left {{ isjiangli ? 'choose' : ''}}" bindtap="btnjli">
+				<image hidden="{{!isjiangli}}" mode="widthFix" src="../../assets/images/jl1.png"></image>
+				<image hidden="{{isjiangli}}" mode="widthFix" src="../../assets/images/jl2.png"></image>
+			</view>
+			<view class="tab_right {{ isjiangli ? '' : 'choose2'}}" bindtap="btnhd">
+				<image hidden="{{!isjiangli}}" mode="widthFix" src="../../assets/images/hd2.png"></image>
+				<image hidden="{{isjiangli}}" mode="widthFix" src="../../assets/images/hd1.png"></image>
+			</view>
+
+		</view>
+
+
+		
+		<!-- jiangli -->
+		<view hidden="{{!isjiangli}}">
+			<!-- 头部 -->
+			<view class="title" style="{{uid == '' ? 'display:none' : ''}}">
+				<image class="wg" src="../../assets/images/wg_hd.png"></image>
+
+				<view class="left">
+					<view>我的总排名</view>
+					<view style="padding-top:8rpx">第<text class="digital">{{myRank}}</text>名</view>
+				</view>
+
+				<!-- <view class="center"> -->
+				<open-data class="userAvatar" type="userAvatarUrl"></open-data>
+				<image mode="widthFix" class="hg" src="../../assets/images/hg.png"></image>
+				<!-- </view> -->
+
+				<view class="right">
+					<view>我的胖友圈</view>
+					<view style="padding-top:8rpx"><text class="digital">{{myInfo.menber_num}}</text>人</view>
+				</view>
+
+			</view>
+			<!-- 排名信息 -->
+			<view class="content {{uid == '' ? 'taller' :''}}">
+				<view class="content_item" wx:for="{{rank}}" wx:key="index">
+					<image wx:if="{{index == 0}}" class="rankpic" mode="widthFix" src="../../assets/images/first.png"></image>
+					<image wx:elif="{{index == 1}}" class="rankpic" mode="widthFix" src="../../assets/images/second.png"></image>
+					<image wx:elif="{{index == 2}}" class="rankpic" mode="widthFix" src="../../assets/images/third.png"></image>
+					<text wx:else class="rank">{{index +  1}}</text>
+
+					<image class="ava" src="{{item.user_image}}"></image>
+					<text class="who">{{item.user_name}}</text>
+					<text class="data">胖友圈<text class="digital">{{item.menber_num}}</text>人</text>
+				</view>
+			</view>
+			<!-- <text style="Vertical-align:center">... ...</text> -->
+			<!-- 活动信息 -->
+			<view class="botInfo">
+				<!-- <view class="infoitem">开奖时间：2021年2月10日 12:00</view> -->
+				<!-- <view class="infoitem">活动期间参与“比比谁最胖”活动，</view> -->
+				<view class="infoitem">胖友圈人数排行榜前五名可分别获得对应奖品</view>
+				<view class="infoShortitem">第1名：价值<text style="color:red">219元</text>Ladynana美肌代餐奶昔</view>
+				<view class="infoShortitem">第2名：价值<text style="color:red">139元</text>轻乐美燕窝胶原蛋白饮</view>
+				<view class="infoShortitem">第3-5名：价值<text style="color:red">69元</text>Nana元气零食水果麦片</view>
+				<!-- <view class="infoShortitem">第1名：<text style="color:red">iPhone12（256G）</text>颜色随机</view>
+				<view class="infoShortitem">第2名：价值<text style="color:red">4999元</text>戴森吹风机</view>
+				<view class="infoShortitem">第3-5名：价值<text style="color:red">139元</text>Nana奶昔礼盒</view> -->
+
+				<!-- <view class="SShortitem_wrapper">
+					<view class="infoShortitem">参与奖5名：榜单随机抽取5名参与用户</view>
+					<view class="infoShortitem">赠送<text style="color:red">《你好，李焕英》电影票2张</text></view>
+				</view> -->
+
+				<view class="SShortitem_wrapper">
+					<view class="SShortitem">中奖名单信息将在 2021年3月12日 12:00于“女生主张”公众号</view>
+					<view class="SShortitem">公布，实物奖品将在公布后30天内联系中奖者发放，同一用</view>
+					<view class="SShortitem">户不可重复中奖。</view>
+					<view class="SShortitem">本活动最终解释权归 女生主张 所有。</view>
+				</view>
+
+				<image mode="widthFix" class="botInfo_iamge" src="../../assets/images/jianglipic.png"></image>
+				<!-- <image mode="widthFix" class="botInfo_iamge2" src="../../assets/images/jianglicankpic.png"></image> -->
+
+
+			</view>
+		</view>
+
+
+		<!-- huodong -->
+		<view hidden="{{isjiangli}}" class="huodongtab">
+
+			<view class="tt">
+				活动期间参与“比比谁更胖”活动，填写身高体重，马上开战。
+			</view>
+			<view class="tt">
+				分享活动至朋友圈或群，邀请好友满5人以上，即可生成专属胖友圈并参与排行榜奖励。
+			</view>
+
+			<view class="tt-1">
+				【 排名规则 】
+			</view>
+
+			<view class="tt">
+				本活动根据身高体重算出BMI指数进行排名。BMI指数即身体质量指数，是目前国际上常用的衡量人体胖瘦程度以及是否健康的一个标准。</view>
+			<view class="tt2">
+				当我们需要比较及分析一个人的体重对于不同身高的人所带来的健康影响时，BMI值是一个中立的数值。</view>
+			<image class="tt3" mode="widthFix" src="../../assets/images/BMI.png"></image>
+			<view class="tt4">注：排行榜如果BMI一样，排名则按照体重从高往低排</view>
+			<view class="tt5" style="{{uid == '' ? 'visibility:hidden' :''}}">
+				<view>
+					是否开启显示体重信息
+					<view class="tt5_t">(关闭之后别人也无法查看哦~)</view>
+				</view>
+				<image bindtap="imgbtn" class="tt5_tt" mode="widthFix" src="{{open? '../../assets/images/open.png' : '../../assets/images/clo.png'}}"></image>
+			</view>
+
+			<view class="tt6">
+				本活动最终解释权归 女生主张 所有
+
+			</view>
+
+
+
+
+
+		</view>
+
+		<!-- 按钮and  girl -->
+		<view class="btntrue">
+			<!-- <image class="btntrue_image" mode="widthFix" bindtap="btnCofirm" src="{{imgSrc}}"></image> -->
+			<image class="btntrue_image" mode="widthFix" bindtap="btnCofirm" src="../../assets/images/share_ye.png"></image>
+		</view>
+		<image mode="widthFix" class="girlright" src="../../assets/images/sofa.png"></image>
+
+	</view>
+
+
+</view>

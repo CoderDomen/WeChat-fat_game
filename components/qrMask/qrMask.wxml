@@ -1,0 +1,13 @@
+<view class="wrapper">
+<view class="qrcode">
+	<image mode="widthFix" class="gzhewm" src="../../assets/images/fxmtc.png"></image>
+	<view class="btn">
+		<button size="small"  bindtap="bcpic" class="baocun">保存图片</button>
+		<button size="small" bindtap="cancel" class="quxiao">取消</button>
+
+	</view>
+
+</view>
+
+
+</view>

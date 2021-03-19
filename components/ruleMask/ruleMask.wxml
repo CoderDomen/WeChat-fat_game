@@ -1,0 +1,41 @@
+<view class="wrapper">
+	<view class="content_wrapper">
+		<image class="wg" src="../../assets/images/wg.png"></image>
+
+		<view class="title">
+			<text>比比谁更胖 活动规则</text>
+		</view>
+
+
+		<view class="content">
+			<view>① 填写个人信息（身高体重）加入战斗</view>
+			<view>② 分享活动页面至朋友圈，当邀请好友满5人以上，即可生成专属胖友圈</view>
+			<view>活动时间：2021年2月1日至2月26日</view>
+			<view>开奖时间：</view>
+			<view>第一轮2021年2月6日 00:00；</view>
+			<view>第二轮2021年2月12日 00:00；</view>
+			<view>第三轮2021年2月18日 00:00。</view>
+			<view> </view>
+			<view>胖友圈排行榜活动说明：</view>
+			<view>活动期间参与比比谁最胖活动，胖友圈胖行榜前三名可分别获得对应奖品</view>
+			<view>胖友圈排行榜分别会在于2021年2月6日，2月12日，2月18日00:00后清零重新累计。</view>
+			<view>第一名：价值499元新春大礼包一份，三轮共设置3份；</view>
+			<view>第二名：价值299元新春福袋一份，三轮共设置3份；</view>
+			<view>第三名：价值129元代餐奶昔一份，三轮共设置3份；</view>
+			<view>参与奖励：最高可得1000元随机红包及礼券，参与过程随机获得。</view>
+			<view> </view>
+			<view>获奖者凭截图在公众号后台留言领奖。</view>
+			<view></view>
+			<view class="content_last">本活动最终解释权归 <text class="content_last_text">女生主张</text> 所有</view>
+
+		</view>
+
+
+
+		<view class="btntrue">
+			<image class="btntrue_image" mode="widthFix" bindtap="btnCofirm" src="../../assets/images/btntrue.png"></image>
+		</view>
+
+		<image mode="widthFix" class="girlright" src="../../assets/images/girlright.png"></image>
+	</view>
+</view>

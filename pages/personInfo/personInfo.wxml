@@ -1,0 +1,120 @@
+<view class="container">
+	<image class="bg" src="../../assets/images/txxx_bg.png"></image>
+
+	<font-swiper  bindtap="getgift"  data-tabtype="jl"/>
+	<!-- <font-swiper style="visibility:hidden" /> -->
+
+	<view class="main">
+		<!-- <image mode="widthFix" class="girlleft" src="../../assets/images/girlleft.png" /> -->
+		<!-- <image mode="widthFix" class="girlright" src="../../assets/images/girlright.png" /> -->
+
+		<view class="main_center">
+			<view class="avadata">
+				<image src="{{avaUrl}}" class="avaUrl"></image>
+				<!-- <open-data class="try" type="userAvatarUrl"></open-data> -->
+			</view>
+
+			<image mode="widthFix" class="hg" src="../../assets/images/hg.png"></image>
+
+			<view class="title">
+				<text>填写选择你的身材</text>
+			</view>
+
+			<view class="height_wrapper">
+				<image class="height_left" src="../../assets/images/sg.png" mode="widthFix"></image>
+				<input class="height_input" type="digit" bindinput="heightInput" maxlength='6' />
+				<image class="height_right" src="../../assets/images/CM.png" mode="widthFix"></image>
+			</view>
+			<view class="weight_wrapper">
+				<image class="weight_left" src="../../assets/images/tz.png" mode="widthFix"></image>
+				<input class="weight_input" type="digit" bindinput="weightInput" maxlength='6' />
+				<image class="weight_right" src="../../assets/images/KG.png" mode="widthFix"></image>
+			</view>
+
+			<view style="font-size:28rpx">
+				<text>每日有一次机会更新你的身材哦~</text>
+			</view>
+
+
+
+			<!-- <movable-area class="movable-area1">
+				<movable-view direction="horizontal" class="movable-view1" x="{{movabledis1}}" bindchange="onChange">
+					<image src="../../assets/images/redheight.png" />
+					<view><text>{{youHeight}}CM</text></view>
+				</movable-view>
+			</movable-area> -->
+
+			<!-- <movable-area class="movable-area2">
+				<movable-view direction="horizontal" class="movable-view2" x="{{movabledis2}}" bindchange="onChange2">
+					<image src="../../assets/images/bluewight.png" />
+					<view><text>{{youWeight}}KG</text></view>
+				</movable-view>
+			</movable-area> -->
+
+
+		</view>
+
+	</view>
+
+	<view class="center">
+		<!-- <image mode="widthFix" class="girlgo" src="../../assets/images/girlgo.png" /> -->
+		<text>完成后 立即加入战场！</text>
+	</view>
+
+	<!-- <view class="other">
+		<view class="item">
+			<image mode="widthFix" class="girlgo" src="../../assets/images/girl.png"></image>
+			<view>
+				<text> ? KG </text>
+			</view>
+		</view>
+		<view class="item">
+			<image class="girlgo" src="../../assets/images/boy.png"></image>
+			<view>
+				<text> ? KG </text>
+			</view>
+		</view>
+		<view class="item">
+			<image class="girlgo" src="../../assets/images/girl.png"></image>
+			<view>
+				<text> ? KG </text>
+			</view>
+		</view>
+		<view class="item">
+			<image class="girlgo" src="../../assets/images/boy.png"></image>
+			<view>
+				<text> ? KG </text>
+			</view>
+		</view>
+	</view> -->
+
+	<view class="true">
+		<!-- <image mode="widthFix" class="handright" src="../../assets/images/handleft.png" /> -->
+
+		<!-- <button open-type="getPhoneNumber" class="butt {{ishandle ? 'animaton' :''}}"  bindgetphonenumber="getPhoneNumber">
+			<image mode="widthFix"  src="../../assets/images/trueinfo.png" />
+		</button> -->
+		<image mode="widthFix" bindtap="onClick" class="butt {{ishandle ? 'animaton' :''}}" src="../../assets/images/trueinfo.png" />
+
+
+		<!-- <image mode="widthFix" class="handright" src="../../assets/images/handright.png" /> -->
+	</view>
+
+	<!-- <view class="girlgo_wrapper">
+
+		<image mode="widthFix" class="girlgo" src="../../assets/images/girlgo.png" />
+	</view> -->
+
+
+	<!-- 二维码 -->
+	<qr-mask wx:if="{{isQrCode}}" bind:maskClick="maskClick" />
+
+
+	<!-- <image mode="widthFix" bindtap="getgift" class="gift" data-tabtype="jl" src="../../assets/images/gift.png"></image> -->
+	<gift_bao class="gift" bind:opengift="opengift" />
+
+	<!-- 礼物弹出 -->
+	<gift-mask wx:if="{{isGift}}" bind:btnContinue="btnContinue" bind:closegift="closegift" imgSrc="../../assets/images/write.png" tabtype="{{tabtype}}">
+	</gift-mask>
+
+</view>

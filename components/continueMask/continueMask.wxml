@@ -1,0 +1,3 @@
+<view class="wrapper" bindtap="btnImage">
+  <image mode="widthFix" src="../../assets/images/sharefly.png" class="wrapper_image" ></image>
+</view>

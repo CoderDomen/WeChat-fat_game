@@ -1,0 +1,69 @@
+<!--index.wxml-->
+<view class="container">
+	<image class="bg" mode="scaleToFill" src="../../assets/images/bg2.jpg" />
+
+
+	<font-swiper bindtap="getgift" class="fontswi" data-tabtype="jl" />
+	<!-- <font-swiper style="visibility:hidden" /> -->
+
+
+	<!-- 引导页 -->
+	<!-- <image bindtap="txxxClick" wx:if="{{istxxx && !isuid}}" class="txxx" src="../../assets/images/txxx.jpg"></image>
+	<image bindtap="fmClick" wx:if="{{isfm && !isuid}}" class="fm" src="../../assets/images/fm.jpg"></image> -->
+
+
+
+	<button bindgetuserinfo="getuserinfo"  class="openmypanyou_butt" open-type="getUserInfo" lang="zh_CN">
+		<image mode="widthFix" src="../../assets/images/openmypanyou.png"></image>
+	</button>
+
+
+
+	<!-- <view class="true">
+		<image mode="widthFix" class="handleft" src="../../assets/images/handleft.png" />
+
+		<button bindgetuserinfo="getuserinfo" class="butt" open-type="getUserInfo" lang="zh_CN">
+			<image mode="widthFix" class="buttimage" src="../../assets/images/lookmy.png">
+				<open-data class="userAvatar" type="userAvatarUrl"></open-data>
+			</image>
+		</button>
+
+		<image mode="widthFix" class="handright" src="../../assets/images/handright.png" />
+	</view> -->
+
+
+	<!-- <view class="rule">
+		<text bindtap="getgift" data-tabtype="hd">活动规则 ></text>
+	</view> -->
+
+
+
+	<!-- 规则弹出 -->
+	<!-- <x-mask wx:if="{{isMask}}" bind:btnCofirm="btnCofirm">
+		<text>比比谁更胖 活动规则</text>
+		<view slot="content1">一、填写个人信息（身高体重）加入战斗</view>
+		<view slot="content2">二、分享活动页面至朋友圈，当邀请好友满5人以上，即可生成专属胖友圈</view>
+	</x-mask> -->
+	<!-- <rule-mask wx:if="{{isMask}}" bind:btnCofirm="btnCofirm">
+	</rule-mask> -->
+
+
+
+
+	<!-- 
+	<image mode="widthFix" bindtap="getgift" class="gift"  data-tabtype="jl" src="../../assets/images/gift.png"></image> -->
+	<gift_bao class="gift" bind:opengift="opengift" />
+
+
+	<!-- 礼物弹出 -->
+	<gift-mask wx:if="{{isGift}}" bind:btnContinue="btnContinue" bind:closegift="closegift" imgSrc="../../assets/images/share.png" tabtype="{{tabtype}}">
+	</gift-mask>
+
+	<!-- 分享弹出 -->
+	<continue-mask wx:if="{{isContinue}}" bind:closeContinue="closeContinue">
+	</continue-mask>
+
+
+
+
+</view>

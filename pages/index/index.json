@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+  
+    "font-swiper":"../../components/fontSwiper/fontSwiper",
+    "rule-mask":"../../components/ruleMask/ruleMask",
+    "gift-mask":"../../components/giftMask/giftMask",
+    "continue-mask":"../../components/continueMask/continueMask"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark" 
+}

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "font-swiper":"../../components/fontSwiper/fontSwiper",
+
+    "qr-mask":"../../components/qrMask/qrMask",
+    "gift-mask":"../../components/giftMask/giftMask"
+
+
+  }
+}

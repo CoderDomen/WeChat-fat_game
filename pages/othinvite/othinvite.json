@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "continue-mask":"../../components/continueMask/continueMask",
+    "x-mask":"../../components/mask/mask",
+    "font-swiper":"../../components/fontSwiper/fontSwiper",
+    "painter":"../../components/painter/painter",
+    "gift-mask":"../../components/giftMask/giftMask"
+  },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark" 
+}

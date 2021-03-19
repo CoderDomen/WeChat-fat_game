@@ -1,0 +1,26 @@
+<view class="disp">
+	<view class="disp_center">
+		<image mode="widthFix" class="girlbtop" src="../../assets/images/invitegirl.png"></image>
+		<view class="avadata">
+			<open-data class="try" type="userAvatarUrl"></open-data>
+		</view>
+		<image mode="widthFix" class="hg" src="../../assets/images/hg.png"></image>
+
+		<view style="margin: 10rpx 0  0  0;">我是朋友圈</view>
+		<text style="font-size: 80rpx; font-weight:700;">第 <text style="font-size: 120rpx;">?</text> 胖</text>
+
+		<view style="color:#EC2F2B">凑满5人马上开战</view>
+	</view>
+
+	<view class="bott">
+		<button class="shareBtn" class="save" type="primary" open-type="getUserInfo" bindgetuserinfo="onSave">点击保存</button>
+
+		<button class="exit" type="warn" bindtap="onExit">退出</button>
+	</view>
+
+  <painter palette="{{paintPallette}}" bind:imgOK="onImgOK" widthPixels="1000" />
+
+
+
+
+</view>

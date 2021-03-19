@@ -1,0 +1,308 @@
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  /* background: url(../../assets/images/dw.png) no-repeat top/cover; */
+
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+
+
+
+}
+
+
+
+/* disp */
+
+.disp {
+  width: 100%;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.disp .disp_center {
+  font-size: 35rpx;
+  position: relative;
+  width: 65%;
+  height: 320rpx;
+  border: 2px solid #FFE372;
+  border-radius: 5%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.disp .disp_center .avadata {
+  position: absolute;
+  top: -56rpx;
+  left: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  z-index: 100;
+  border: 1px solid red;
+  /* overflow: hidden; */
+}
+
+/* .disp .disp_center .avadata view {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+} */
+.disp .disp_center .avadata .try {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.disp .disp_center .avadata .hg {
+  position: absolute;
+  width: 80rpx;
+  /* height: 100rpx; */
+  top: -36rpx;
+  right: -36rpx;
+  /* width: 80rpx;
+  top: -95rpx;
+  left: 95rpx; */
+
+
+}
+
+
+.disp .disp_center .girlbtop {
+  top: -62rpx;
+  right: -62rpx;
+  width: 156rpx;
+  /* height: 200rpx; */
+  position: absolute;
+}
+
+.nober{
+  width: 60%;
+  margin: 25rpx 0;
+  
+}
+
+
+
+
+
+
+/* true */
+.true {
+  position: relative;
+  margin: 20rpx 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .true image { */
+  /* width: 120rpx; */
+  /* height: 85rpx; */
+/* } */
+
+.true .butt {
+  /* animation: ripple 0.8s ease 0s infinite alternate; */
+  width: 480rpx;
+  /* flex: 1; */
+  /* color: white; */
+  /* background-color: red; */
+  /* margin: 0 10rpx; */
+  position: relative;
+}
+
+
+.userAvatar {
+  position: absolute;
+  top: 46%;
+  transform: translate(0, -50%);
+  left: 10%;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 63rpx;
+  height: 63rpx;
+  overflow: hidden;
+}
+.shouzhi{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 82rpx;
+  transform: translate(280rpx,-30%);
+
+}
+
+/* center */
+.center {
+  width: 100%;
+  text-align: center;
+  padding: 22rpx 0;
+
+}
+
+.center .center_person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30rpx 0;
+
+}
+
+.center .center_person .center_person_item {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  margin-left: 15rpx;
+  overflow: hidden;
+  border: 2px solid white;
+
+
+}
+
+.center .center_person .center_person_item image {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  background-color: white;
+  z-index: 10;
+  text-align: center;
+  width: 95%;
+  /* height: 800rpx; */
+  border-radius: 5%;
+  border: 1px solid #EC2F2B;
+  box-shadow: 4px 4px #EC2F2B;
+  margin: 0 auto;
+  font-size: 35rpx;
+  overflow: hidden;
+  padding: 25rpx;
+  box-sizing: border-box;
+
+}
+
+.main .main_item {
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 12rpx 25rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.main .main_item .ava {
+  margin-left: 15rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.main .main_item .who {
+  margin-left: 15rpx;
+  text-overflow: ellipsis;
+  width: 232rpx;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.main .main_item .data {
+  position: absolute;
+  right: 25rpx;
+  font-size: 30rpx;
+}
+
+.main .main_item .data_butt {
+  position: absolute;
+  right: 25rpx;
+  width: 180rpx;
+  padding: 0;
+}
+
+.main .tip {
+  text-align: center;
+  padding: 40rpx 0 0 0 ;
+}
+
+.main .tip text {
+  display: inline-block;
+  /* padding-bottom: 10rpx; */
+  border-bottom: solid 1px;
+}
+
+.redcol{
+  color: #EC2F2B;
+}
+
+
+
+
+
+.girlgo {
+  margin: 6vh 0;
+  width: 100%;
+  text-align: center;
+}
+
+.girlgo image {
+  width: 400rpx;
+  /* height: 250rpx; */
+
+}
+
+.fix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: none;
+  z-index: -1;
+}
+
+.none {
+  display: none;
+}
+
+
+.gift {
+  /* animation: sway 0.8s ease 0s infinite alternate; */
+  animation: sway 1s linear 0s infinite ;
+  position: absolute;
+  width: 88rpx;
+  top: 45%;
+  z-index: 200;
+  right: 5%;
+}
+
+@keyframes sway {
+  0%{transform:scale(1);}
+  10%,20%{transform:scale(0.9) rotate(-3deg);}
+  30%,50%,70%,90%{transform:scale(1.2) rotate(3deg);}
+  40%,60%,80%{transform:scale(1.2) rotate(-3deg);}
+  100%{transform:scale(1) rotate(0);}
+}
+
+
+
+@keyframes ripple {
+  0% {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+
+  100% {
+    transform: scale(1);
+    transform-origin: center;
+  }
+}

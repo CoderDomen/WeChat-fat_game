@@ -1,0 +1,17 @@
+<view class="gift_wrapper">
+
+
+
+
+
+	<button wx:if="{{!hasmobile1 && hasSK}}" open-type="getPhoneNumber" class="gift_butt" bindgetphonenumber="getPhoneNumber" data-tabtype="jl">
+		<image mode="widthFix" class="gift_image" src="../../assets/images/gift.png"></image>
+	</button>
+
+	<button wx:else class="gift_butt" bindtap="opengift" data-tabtype="jl">
+		<image mode="widthFix" class="gift_image" src="../../assets/images/gift.png"></image>
+	</button>
+
+
+
+</view>

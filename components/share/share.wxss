@@ -1,0 +1,75 @@
+
+.disp {
+  width: 100%;
+  text-align: center;
+  /* margin-top: 15%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* disp  .disp_center*/
+
+.disp .disp_center {
+  background-color: white;
+  font-size: 35rpx;
+  position: relative;
+  width: 65%;
+  height: 320rpx;
+  border: 2px solid red;
+  border-radius: 5%;
+  margin: 0 auto;
+}
+
+.disp .disp_center .avadata {
+  position: absolute;
+  top: -56rpx;
+  left: 20rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  z-index: 10;
+  border: 1px solid red;
+  overflow: hidden;
+}
+.disp .disp_center .hg {
+  position: absolute;
+  z-index: 20;
+  width: 100rpx;
+  /* height: 100rpx; */
+  top: -113rpx;
+  left: 97rpx;
+}
+
+
+.disp .disp_center .girlbtop {
+  position: absolute;
+  z-index: 1;
+  width: 150rpx;
+	/* transform: scale(0.3); */
+	/* transform-origin: top right; */
+	top: -95rpx;
+	right: -35rpx;
+}
+
+
+/* disp  .bott*/
+.disp .bott{
+  margin: 25rpx auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.disp .bott .save{
+  margin-right: 15rpx;
+  
+}
+
+.disp .bott .exit{
+  
+}
+
+

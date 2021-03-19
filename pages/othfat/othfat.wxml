@@ -1,0 +1,89 @@
+<view class="container">
+	<image class="bg" src="../../assets/images/other_bg.png"></image>
+	<font-swiper  bindtap="getgift"  data-tabtype="jl"/>
+	<!-- <font-swiper style="visibility:hidden" /> -->
+
+	<view class="disp">
+		<view class="disp_center">
+			<image mode="widthFix" class="girlbtop" src="../../assets/images/boytop.png"></image>
+			<view class="avadata">
+				<image class="try" src="{{fzdata.userImage}}"></image>
+				<image class="hg" mode="widthFix" src="../../assets/images/hg.png"></image>
+			</view>
+			<view style="margin-top: 10rpx;">TA是朋友圈</view>
+			<text style="font-size: 80rpx; font-weight:700;">第 <text class="digital">{{fzdata.index}}</text> 胖</text>
+			<!-- <view> **** </view> -->
+			<view class="xxarr">
+				<image wx:for="{{fzdata.starNum}}" wx:key="index" src="../../assets/images/xx.png"></image>
+			</view>
+			<view style="margin:15rpx auto ;">{{wenAn}}</view>
+			<!-- <view style="margin:15rpx 0 ;">不服来比一比</view> -->
+
+		</view>
+	</view>
+
+
+	<view class="true">
+		<!-- <image mode="widthFix" class="handright" src="../../assets/images/handleft.png" /> -->
+		<image mode="widthFix" class="butt" src="../../assets/images/lookmy.png" bindtap="onClick">
+			<open-data class="userAvatar" type="userAvatarUrl"></open-data>
+		</image>
+		<image mode="widthFix" class="shouzhi" src="../../assets/images/shouzhi.png"></image>
+
+		<!-- <image mode="widthFix" class="handright" src="../../assets/images/handright.png" /> -->
+	</view>
+
+
+	<view class="main">
+		<image class="wg" src="../../assets/images/wg.png"></image>
+
+		<!-- 我 -->
+		<view class="main_item" style="color:red;height:110rpx;">
+			<text class="rank">{{mydata.index}}胖</text>
+			<image class="ava" src="{{mydata.userImage}}"></image>
+			<text class="who">我</text>
+			<text class="data">{{mydata.wenAn}}</text>
+		</view>
+
+		<view class="main_item " wx:for="{{playerInfo}}" wx:key="index">
+			<text class="rank" style="{{item.isMe ? 'color:red' :''}}">{{item.num}}胖</text>
+
+			<image class="ava" src="{{item.userImage}}"></image>
+
+			<text class="who" wx:if="{{item.isMe}}">我本人</text>
+			<text class="who" wx:else>{{item.userName}}</text>
+
+			<view wx:if="{{item.isMe || item.isOwner}}" class="data" style="{{item.isMe ? 'color:red' :''}}">
+				<text wx:if="{{item.isDisplayFat && item.isDisplayFat == 1}}">{{item.fat_weight}}kg</text>
+				BMI:{{item.fat_bmi}}
+			</view>
+			<image wx:else mode="widthFix" bindtap="watchWho" class=" data data_iamge" src="../../assets/images/btnwho.png"></image>
+		</view>
+
+		<view class="tip">
+			<!-- <text bindtap="getRule">排名是如何计算的?</text> -->
+			<text bindtap="getgift" data-tabtype="hd">排名是如何计算的?</text>
+		</view>
+
+	</view>
+
+
+	<!-- <x-mask wx:if="{{isMask}}" bind:btnCofirm="btnCofirm">
+		<text>比比谁更胖 排名计算规则</text>
+		<view slot="content1">根据身高体重算出BMI指数进行排名。BMI指数即身体质量指数，是目前国际上常用的衡量人体胖瘦程度以及是否健康的一个标准。当我们需要比较及分析一个人的体重对于不同身高的人所带来的健康影响时，BMI值是一个中立的数值。</view>
+		<view slot="content2">注：如果BMI一样，则按照体重从高往低排</view>
+	</x-mask> -->
+<painter class="{{paintPallette ? 'fix' : 'none'}}" palette="{{paintPallette}}" bind:imgOK="onImgOK" widthPixels="1000" />
+
+	<!-- 提示 -->
+	<tip-mask wx:if="{{tipMask}}" bind:btnCofirm="onClick" bind:xtap="xtap" />
+
+	<!-- <image mode="widthFix" bindtap="getgift" class="gift" data-tabtype="jl" src="../../assets/images/gift.png"></image> -->
+		<gift_bao class="gift"  bind:opengift="opengift" />
+
+	<!-- 礼物弹出 -->
+	<gift-mask wx:if="{{isGift}}" bind:btnContinue="btnContinue" bind:closegift="closegift" imgSrc="../../assets/images/gomyfat.png" tabtype="{{tabtype}}">
+	</gift-mask>
+
+
+</view>

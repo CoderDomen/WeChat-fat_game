@@ -1,0 +1,318 @@
+.container {
+	width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
+	font-family: xique;
+
+}
+
+.bg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	/* 重 * */
+	z-index: -1;
+
+
+}
+
+/* main */
+.main {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 28%;
+}
+
+.main .main_center {
+	background-color: white;
+	position: relative;
+	z-index: 10;
+	width: 70%;
+	height: 58vw;
+	border: 4px solid #FFE372;
+	border-radius: 5%;
+	margin: 0 auto;
+}
+
+.main .main_center .avadata {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 148rpx;
+	height: 148rpx;
+	border-radius: 50%;
+	z-index: 10;
+	border: 2px solid red;
+	overflow: hidden;
+}
+.avaUrl{
+	width: 100%;
+	height: 100%;
+}
+
+.main .main_center .hg {
+	position: absolute;
+	z-index: 20;
+	width: 80rpx;
+	top: -114rpx;
+	left: 55%;
+	
+}
+
+.main .main_center .title {
+	text-align: center;
+	margin-top: 71rpx;
+	padding: 31rpx 0 0 0;
+}
+
+/* movable-area1 */
+.main .main_center .movable-area1 {
+	position: relative;
+	margin: 86rpx 0;
+	width: 100%;
+	height: 2rpx;
+	background-color: #EC2F2B;
+}
+
+.main .main_center .movable-view1 {
+	position: absolute;
+	top: -24rpx;
+	width: 48rpx;
+	height: 48rpx;
+	/* margin-top: -24rpx; */
+	/* margin-left: -48rpx; */
+
+	/* transform: translate(-50%, -50%)!important; 设置之后导致无法滑动  */
+
+}
+
+.main .main_center .movable-view1 image {
+	width: 48rpx;
+	height: 48rpx;
+}
+
+.main .main_center .movable-view1 view {
+	width: 96rpx;
+	text-align: center;
+	transform: translate(-24rpx, -96rpx);
+}
+
+.main .main_center .movable-view1 view text {
+	color: #EC2F2B;
+}
+
+/* movable-area2 */
+.main .main_center .movable-area2 {
+	margin: 120rpx 0 0 0;
+	width: 100%;
+	height: 2rpx;
+	background-color: #EC2F2B;
+}
+
+.main .main_center .movable-view2 {
+	position: absolute;
+	top: -24rpx;
+	width: 48rpx;
+	height: 48rpx;
+
+}
+
+.main .main_center .movable-view2 image {
+	width: 48rpx;
+	height: 48rpx;
+}
+
+.main .main_center .movable-view2 view {
+
+	width: 96rpx;
+	text-align: center;
+	transform: translate(-24rpx, -96rpx);
+}
+
+.main .main_center .movable-view2 view text {
+
+	color: blue;
+}
+
+.main .girlleft {
+	position: absolute;
+	top: -92rpx;
+	left: 127rpx;
+	width: 120rpx;
+	z-index: -1;
+
+
+}
+
+.main .girlright {
+	position: absolute;
+	width: 120rpx;
+	top: -92rpx;
+	right: 57px;
+
+
+
+}
+
+
+
+/* .main .main_center .girlleft {
+	position: absolute;
+	top: -112px;
+	left: -55px;
+}
+.main .main_center .girlright {
+	position: absolute;
+	width: 140rpx;
+	top: -100rpx;
+	right: 0rpx;
+} */
+
+.height_wrapper,
+.weight_wrapper {
+	margin: 32rpx 0;
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.height_left,
+.weight_left {
+	width: 100rpx;
+}
+
+.height_right,
+.weight_right {
+	width: 70rpx;
+
+}
+
+.height_input,
+.weight_input {
+	width: 140rpx;
+	border: solid 2px red;
+	border-radius: 10rpx;
+	margin: 0 30rpx;
+	height: 71rpx;
+	
+}
+
+
+
+
+/* center */
+.center {
+	margin: 3vh 0 2vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .center .girlgo {
+	width: 200rpx;
+} */
+.girlgo_wrapper {
+	margin: 3vh 0;
+	width: 100%;
+	text-align: center;
+}
+
+.girlgo {
+	width: 400rpx;
+}
+
+/* other */
+.other {
+	margin: 3vh 0 6vh 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.other .item {
+	width: 15%;
+	margin: 0 10rpx;
+}
+
+.other .item image {
+	width: 100%;
+	height: 15vw;
+}
+
+.other .item view {
+	text-align: center;
+}
+
+
+/* true */
+.true {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+.true image {
+	width: 120rpx;
+	/* height: 85rpx; */
+}
+
+.true .butt {
+	/* flex: 1; */
+	/* color: white; */
+	margin: 0 10rpx;
+	/* background-color: #EC2F2B; */
+	padding: 0;
+	width: 50%;
+	
+
+}
+.true .butt image{
+	width: 100%;
+}
+
+.animaton {
+	animation: ripple 0.8s ease 0s infinite alternate;
+
+}
+
+
+.gift {
+	/* animation: sway 0.8s ease 0s infinite alternate; */
+  animation: sway 1s linear 0s infinite ;
+
+	position: absolute;
+	width: 88rpx;
+	top: 45%;
+	z-index: 200;
+	right: 5%;
+}
+
+@keyframes sway {
+  0%{transform:scale(1);}
+  10%,20%{transform:scale(0.9) rotate(-3deg);}
+  30%,50%,70%,90%{transform:scale(1.2) rotate(3deg);}
+  40%,60%,80%{transform:scale(1.2) rotate(-3deg);}
+  100%{transform:scale(1) rotate(0);}
+}
+
+
+@keyframes ripple {
+	0% {
+		transform: scale(1.1);
+		transform-origin: center;
+	}
+
+	100% {
+		transform: scale(1);
+		transform-origin: center;
+	}
+}

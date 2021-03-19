@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/personInfo/personInfo",
+    "pages/myinvite/myinvite",
+    "pages/othinvite/othinvite",
+    "pages/myfat/myfat",
+    "pages/othfat/othfat"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "比比谁更胖",
+    "navigationBarTextStyle":"white"
+  },
+  "usingComponents": {
+    "gift_bao":"./components/gift/gift"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

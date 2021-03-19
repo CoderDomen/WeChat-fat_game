@@ -1,0 +1,3 @@
+.scrolltxt{padding:0 20rpx;background:#CD2233;}
+.marquee_box {position:relative;color:white;height:45rpx;display:block;overflow:hidden;} 
+.marquee_text {white-space: nowrap;position:absolute;top:0;font-size:14px;height:45rpx;line-height:45rpx;}
